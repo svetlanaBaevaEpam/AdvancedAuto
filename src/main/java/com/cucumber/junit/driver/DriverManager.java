@@ -11,7 +11,7 @@ import static org.openqa.selenium.chrome.ChromeDriverService.CHROME_DRIVER_EXE_P
 
 public class DriverManager {
 
-    private final static String CHROME_DRIVER_PATH = "./src/main/resources/chromedriver.file";
+    private final static String CHROME_DRIVER_PATH = "./src/main/resources/chromedriver.exe";
     private static final int IMPLICIT_WAIT_TIMEOUT = 5;
     private static final int PAGE_LOAD_TIMEOUT = 20;
     private static ThreadLocal<WebDriver> webDriverThreadLocal = new ThreadLocal<>();

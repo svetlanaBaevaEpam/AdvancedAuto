@@ -24,4 +24,12 @@ public abstract class BasePage {
     public boolean isElementDisplayed(By by) {
         return !findElements(by).isEmpty();
     }
+
+    public void click(String button) {
+        findElement(By.xpath(button)).click();
+    }
+
+    public void fillField(String field, String value) {
+        findElement(By.xpath(field)).sendKeys(value);
+    }
 }
